@@ -1,7 +1,9 @@
 name: kozen_p
-description: "A new Flutter plugin project."
-version: 0.0.1
-homepage:
+description: "The kozen_p plugin is designed to facilitate interaction with specific payment processing features in Android via Flutter. This plugin provides methods to initiate transactions, load various keys (e.g., PIN key, master key), and interact with the EMV (Europay, MasterCard, and Visa) transaction flow."
+version: 0.0.2
+authors:
+  - 'Ayooluwa Olosunde'
+homepage: 'https://github.com/lovisgod/Kozen-flutter-plugin'
 
 environment:
   sdk: '>=3.2.6 <4.0.0'
@@ -68,3 +70,4 @@ flutter:
   #
   # For details regarding fonts in packages, see
   # https://flutter.dev/custom-fonts/#from-packages
+repository: 'https://github.com/lovisgod/Kozen-flutter-plugin'

@@ -21,6 +21,9 @@ class RequestIccData {
   final String appVersionNumber;
   final String interfaceDeviceSerialNumber;
   final String appPanSequenceNumber;
+  final String pinBlock;
+  final String ksn;
+  final String track2Data;
 
   RequestIccData({
     required this.transactionAmount,
@@ -45,6 +48,9 @@ class RequestIccData {
     required this.appVersionNumber,
     required this.interfaceDeviceSerialNumber,
     required this.appPanSequenceNumber,
+    required this.pinBlock,
+    required this.ksn,
+    required this.track2Data
   });
 
   // Convert from event (Map) to RequestIccData
@@ -72,6 +78,9 @@ class RequestIccData {
       appVersionNumber: event['APP_VERSION_NUMBER'] ?? '',
       interfaceDeviceSerialNumber: event['INTERFACE_DEVICE_SERIAL_NUMBER'] ?? '',
       appPanSequenceNumber: event['APP_PAN_SEQUENCE_NUMBER'] ?? '',
+      pinBlock: event['PIN_BLOCK'] ?? '',
+      ksn: event['KSN'] ?? '',
+      track2Data: event['TRACK_2_DATA'] ?? ''
     );
   }
 
@@ -100,6 +109,9 @@ class RequestIccData {
       'APP_VERSION_NUMBER': appVersionNumber,
       'INTERFACE_DEVICE_SERIAL_NUMBER': interfaceDeviceSerialNumber,
       'APP_PAN_SEQUENCE_NUMBER': appPanSequenceNumber,
+      'TRACK_2_DATA': track2Data,
+      'KSN': ksn,
+      'PIN_BLOCK': pinBlock
     };
   }
 }
